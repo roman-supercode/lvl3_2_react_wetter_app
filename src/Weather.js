@@ -20,18 +20,18 @@ function Weather() {
     return (
         <div className="divWeather">
             <div className="chooseCountry">
-                <button type="button" onClick={() => setCity("düsseldorlf")}>Düsseldorf</button>
+                <button type="button" onClick={() => setCity("duesseldorf")}>Düsseldorf</button>
                 <button type="button" onClick={() => setCity("köln")}>Köln</button>
                 <button type="button" onClick={() => setCity("berlin")}>Berlin</button>
                 <button type="button" onClick={() => setCity("hamburg")}>Hamburg</button>
             </div>
             <div className="outputDates">
-                <div className="container">
+                <div className="clouds">
                     <p>{weatherData.weather[0].description} in {weatherData.name} </p>
                     <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt={weatherData.weather[0].description}></img>
                 </div>
-                <p>Current: {weatherData.main.temp}°C</p>
-                <p>Wind Speed: {weatherData.wind.speed} meter/sec</p>
+                <p className="currentW">Aktuell: {weatherData.main.temp}°C</p>
+                <p>Windg.: {weatherData.wind.speed} meter/sec</p>
             </div>
         </div >
     );

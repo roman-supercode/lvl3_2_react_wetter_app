@@ -1,20 +1,23 @@
 .divWeather {
-    width: 60%;
-    margin: 10vh auto;
+    width: 25vw;
+    margin: 0 auto;
     padding: 3% 0 10% 0;
 }
 
 .chooseCountry {
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
 }
 
 .chooseCountry button {
-    background-color: #175CC7;
+    background-image: radial-gradient(rgb(10, 54, 79), blue, black);
+    background-color: #0c6d2a;
     color: white;
-    border: transparent;
+    border: 1px solid white;
     padding: 2% 3%;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .outputDates {
@@ -22,6 +25,9 @@
     margin: 5% auto 0 auto;
     border: 1px solid black;
     background-color: #F5F5F5;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
 }
 
 .outputDates p {
@@ -29,22 +35,26 @@
     padding-left: 5%;
 }
 
-.outputDates p:nth-of-type(1) {
-    padding: 9% 0 9% 0;
-    text-align: center;
+.clouds {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 7%;
+}
+
+.clouds p:nth-of-type(1) {
+    border-bottom: none;
+}
+
+.currentW {
+    padding: 4% 0 4% 0;
+    background-color: #ffffff;
 }
 
 .outputDates p:nth-of-type(2) {
     padding: 4% 0 4% 5%;
     background-color: #ffffff;
-}
-
-.outputDates p:nth-of-type(3) {
     border-bottom: none;
-    background-color: #ffffff;
-    padding: 4% 0 4% 5%;
-}
-
-.container {
-    display: flex;
+    border-bottom-right-radius: 30px;
 }
